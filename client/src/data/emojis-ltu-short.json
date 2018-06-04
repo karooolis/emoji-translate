@@ -1,0 +1,6 @@
+[
+  {"keywords_original": ["filing", "organizing"], "keywords_ltu": ["organizuojant, paraiškų, pateikimą"],"title":"file_cabinet","char":"🗄"},
+  {"keywords_original": ["bet", "gamble", "vegas", "fruit", "machine", "luck", "casino"],"keywords_ltu":["bet", "laimi", "vegas", "vaisių", "mašinos", "sėkmės", "kazino"],"title":"slot_machine","char":"🎰"},
+  {"keywords_original": ["face", "tired", "rest", "nap"],"keywords_ltu":["veido", "pavargusio", "poilsio", "nusnusti"],"title":"sleepy","char":"😪"},
+  {"keywords_original": ["organizing", "business", "stationery"],"keywords_ltu":["verslo", "kanceliarinių", "prekių", "organizavimas"],"title":"card_index_dividers","char":"🗂"}
+]
