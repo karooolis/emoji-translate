@@ -1,5 +1,6 @@
 {
   "name": "emojis-react",
+  "homepage": "https://www.karolisram.com/emoji-translate",
   "version": "0.1.0",
   "private": true,
   "proxy": {
