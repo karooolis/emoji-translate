@@ -65,6 +65,8 @@ function getAllEmojiForWord(originalWord) {
     useful.push('😊');
   } else if (word === 'she'){
     useful.push('💁');
+  } else if (word === 'mine' || word === 'my'){
+    useful.push('😊👈');
   } else if (word === 'he'){
     useful.push('💁‍♂️');
   } else if (word === 'we' || word === 'they') {

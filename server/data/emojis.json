@@ -2814,7 +2814,7 @@
     "category": "animals_and_nature"
   },
   "fire": {
-    "keywords": ["hot", "cook", "flame"],
+    "keywords": ["hot", "cook", "flame","fire","burn"],
     "char": "🔥",
     "fitzpatrick_scale": false,
     "category": "animals_and_nature"
@@ -6236,54 +6236,6 @@
   "children_crossing": {
     "keywords": ["school", "warning", "danger", "sign", "driving", "yellow-diamond"],
     "char": "🚸",
-    "fitzpatrick_scale": false,
-    "category": "symbols"
-  },
-  "beginner": {
-    "keywords": ["badge", "shield"],
-    "char": "🔰",
-    "fitzpatrick_scale": false,
-    "category": "symbols"
-  },
-  "recycle": {
-    "keywords": ["arrow", "environment", "garbage", "trash"],
-    "char": "♻️",
-    "fitzpatrick_scale": false,
-    "category": "symbols"
-  },
-  "u6307": {
-    "keywords": ["chinese", "point", "green-square", "kanji"],
-    "char": "🈯",
-    "fitzpatrick_scale": false,
-    "category": "symbols"
-  },
-  "chart": {
-    "keywords": ["green-square", "graph", "presentation", "stats"],
-    "char": "💹",
-    "fitzpatrick_scale": false,
-    "category": "symbols"
-  },
-  "sparkle": {
-    "keywords": ["stars", "green-square", "awesome", "good", "fireworks"],
-    "char": "❇️",
-    "fitzpatrick_scale": false,
-    "category": "symbols"
-  },
-  "eight_spoked_asterisk": {
-    "keywords": ["star", "sparkle", "green-square"],
-    "char": "✳️",
-    "fitzpatrick_scale": false,
-    "category": "symbols"
-  },
-  "negative_squared_cross_mark": {
-    "keywords": ["x", "green-square", "no", "deny"],
-    "char": "❎",
-    "fitzpatrick_scale": false,
-    "category": "symbols"
-  },
-  "white_check_mark": {
-    "keywords": ["green-square", "ok", "agree", "vote", "election", "answer", "tick"],
-    "char": "✅",
     "fitzpatrick_scale": false,
     "category": "symbols"
   },

@@ -32,10 +32,11 @@ exports.translate = async (req, res) => {
             lastSymbol += keyword[keyword.length - 1];
             keyword = keyword.slice(0, keyword.length - 1);
           }
-      
+          
+          let translatedEmojiKeyword = '';
           if (keyword.toLowerCase() === 'labas') {
             translatedEmojiKeyword = '👋';
-          } else {
+          } else if (keyword.length > 1) {
             let translatedKeyword = await translate.translate(keyword.toLowerCase(), OPTIONS);
             translatedKeyword = translatedKeyword[0];
             translatedEmojiKeyword = EmojiTranslate.translate(translatedKeyword);
