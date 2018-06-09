@@ -57,7 +57,7 @@ class App extends Component {
 
         <h3>
           <input className="toggle" type="checkbox" onChange={this.toggle} checked={!this.state.replace} />
-          Pridėti emoji prie teksto
+          Pridėti emociukus prie žodžių
         </h3>
 
         <div id="output" dangerouslySetInnerHTML={{ __html: this.state.translated }} />
