@@ -7,8 +7,8 @@ import './App.css';
 class App extends Component {
   state = {
     value: 'O ne!!! Mano namas dega, o katė tuoj suvalgys visas spurgas.',
-    translated: 'O ne 👎!!! Mano 😊👈namas 🏠dega 🔥, o katė 😿tuoj 👉suvalgys 🍽visas spurgas 🍩.',
-    replace: false,
+    translated: 'O 👎!!! 😊👈 🏠 🔥, o 😹 👉 🍽visas 🍩. ',
+    replace: true,
   };
 
   handleChange = e => {
