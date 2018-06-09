@@ -251,30 +251,6 @@
     "fitzpatrick_scale": false,
     "category": "people"
   },
-  "hand_over_mouth": {
-    "keywords": ["face", "whoops", "shock", "surprise"],
-    "char": "🤭",
-    "fitzpatrick_scale": false,
-    "category": "people"
-  },
-  "shushing": {
-    "keywords": ["face", "quiet", "shhh"],
-    "char": "🤫",
-    "fitzpatrick_scale": false,
-    "category": "people"
-  },
-  "symbols_over_mouth": {
-    "keywords": ["face", "swearing", "cursing", "cussing", "profanity", "expletive"],
-    "char": "🤬",
-    "fitzpatrick_scale": false,
-    "category": "people"
-  },
-  "exploding_head": {
-    "keywords": ["face", "shocked", "mind", "blown"],
-    "char": "🤯",
-    "fitzpatrick_scale": false,
-    "category": "people"
-  },
   "flushed": {
     "keywords": ["face", "blush", "shy", "flattered"],
     "char": "😳",
@@ -1199,90 +1175,6 @@
     "fitzpatrick_scale": true,
     "category": "people"
   },
-  "sorceress": {
-    "keywords": ["woman", "female", "mage", "witch"],
-    "char": "🧙‍♀️",
-    "fitzpatrick_scale": true,
-    "category": "people"
-  },
-  "wizard": {
-    "keywords": ["man", "male", "mage", "sorcerer"],
-    "char": "🧙‍♂️",
-    "fitzpatrick_scale": true,
-    "category": "people"
-  },
-  "woman_elf": {
-    "keywords": ["woman", "female"],
-    "char": "🧝‍♀️",
-    "fitzpatrick_scale": true,
-    "category": "people"
-  },
-  "man_elf": {
-    "keywords": ["man", "male"],
-    "char": "🧝‍♂️",
-    "fitzpatrick_scale": true,
-    "category": "people"
-  },
-  "woman_vampire": {
-    "keywords": ["woman", "female"],
-    "char": "🧛‍♀️",
-    "fitzpatrick_scale": true,
-    "category": "people"
-  },
-  "man_vampire": {
-    "keywords": ["man", "male", "dracula"],
-    "char": "🧛‍♂️",
-    "fitzpatrick_scale": true,
-    "category": "people"
-  },
-  "woman_zombie": {
-    "keywords": ["woman", "female", "undead", "walking dead"],
-    "char": "🧟‍♀️",
-    "fitzpatrick_scale": false,
-    "category": "people"
-  },
-  "man_zombie": {
-    "keywords": ["man", "male", "dracula", "undead", "walking dead"],
-    "char": "🧟‍♂️",
-    "fitzpatrick_scale": false,
-    "category": "people"
-  },
-  "woman_genie": {
-    "keywords": ["woman", "female"],
-    "char": "🧞‍♀️",
-    "fitzpatrick_scale": false,
-    "category": "people"
-  },
-  "man_genie": {
-    "keywords": ["man", "male"],
-    "char": "🧞‍♂️",
-    "fitzpatrick_scale": false,
-    "category": "people"
-  },
-  "mermaid": {
-    "keywords": ["woman", "female", "merwoman", "ariel"],
-    "char": "🧜‍♀️",
-    "fitzpatrick_scale": false,
-    "category": "people"
-  },
-  "merman": {
-    "keywords": ["man", "male", "triton"],
-    "char": "🧜‍♂️",
-    "fitzpatrick_scale": false,
-    "category": "people"
-  },
-  "woman_fairy": {
-    "keywords": ["woman", "female"],
-    "char": "🧚‍♀️",
-    "fitzpatrick_scale": false,
-    "category": "people"
-  },
-  "man_fairy": {
-    "keywords": ["man", "male"],
-    "char": "🧚‍♂️",
-    "fitzpatrick_scale": false,
-    "category": "people"
-  },
   "angel": {
     "keywords": ["heaven", "wings", "halo"],
     "char": "👼",
@@ -1334,12 +1226,6 @@
   "running_man": {
     "keywords": ["man", "walking", "exercise", "race", "running"],
     "char": "🏃",
-    "fitzpatrick_scale": true,
-    "category": "people"
-  },
-  "walking_woman": {
-    "keywords": ["human", "feet", "steps", "woman", "female"],
-    "char": "🚶‍♀️",
     "fitzpatrick_scale": true,
     "category": "people"
   },
@@ -2981,12 +2867,6 @@
     "fitzpatrick_scale": false,
     "category": "food_and_drink"
   },
-  "coconut": {
-    "keywords": ["fruit", "nature", "food", "palm"],
-    "char": "🥥",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
   "kiwi_fruit": {
     "keywords": ["fruit", "food"],
     "char": "🥝",
@@ -2996,12 +2876,6 @@
   "avocado": {
     "keywords": ["fruit", "food"],
     "char": "🥑",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
-  "broccoli": {
-    "keywords": ["fruit", "food", "vegetable"],
-    "char": "🥦",
     "fitzpatrick_scale": false,
     "category": "food_and_drink"
   },
@@ -3083,12 +2957,6 @@
     "fitzpatrick_scale": false,
     "category": "food_and_drink"
   },
-  "pretzel": {
-    "keywords": ["food", "bread", "twisted"],
-    "char": "🥨",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
   "cheese": {
     "keywords": ["food", "chadder"],
     "char": "🧀",
@@ -3104,12 +2972,6 @@
   "bacon": {
     "keywords": ["food", "breakfast", "pork", "pig", "meat"],
     "char": "🥓",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
-  "steak": {
-    "keywords": ["food", "cow", "meat", "cut", "chop", "lambchop", "porkchop"],
-    "char": "🥩",
     "fitzpatrick_scale": false,
     "category": "food_and_drink"
   },
@@ -3173,18 +3035,6 @@
     "fitzpatrick_scale": false,
     "category": "food_and_drink"
   },
-  "sandwich": {
-    "keywords": ["food", "lunch", "bread"],
-    "char": "🥪",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
-  "canned_food": {
-    "keywords": ["food", "soup"],
-    "char": "🥫",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
   "spaghetti": {
     "keywords": ["food", "italian", "noodle"],
     "char": "🍝",
@@ -3230,12 +3080,6 @@
   "fish_cake": {
     "keywords": ["food", "japan", "sea", "beach", "narutomaki", "pink", "swirl", "kamaboko", "surimi", "ramen"],
     "char": "🍥",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
-  "fortune_cookie": {
-    "keywords": ["food", "prophecy"],
-    "char": "🥠",
     "fitzpatrick_scale": false,
     "category": "food_and_drink"
   },
@@ -3305,12 +3149,6 @@
     "fitzpatrick_scale": false,
     "category": "food_and_drink"
   },
-  "pie": {
-    "keywords": ["food", "dessert", "pastry"],
-    "char": "🥧",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
   "cake": {
     "keywords": ["food", "dessert"],
     "char": "🍰",
@@ -3350,12 +3188,6 @@
   "popcorn": {
     "keywords": ["food", "movie theater", "films", "snack"],
     "char": "🍿",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
-  "dumpling": {
-    "keywords": ["food", "empanada", "pierogi", "potsticker"],
-    "char": "🥟",
     "fitzpatrick_scale": false,
     "category": "food_and_drink"
   },
@@ -3437,12 +3269,6 @@
     "fitzpatrick_scale": false,
     "category": "food_and_drink"
   },
-  "cup_with_straw": {
-    "keywords": ["drink", "soda"],
-    "char": "🥤",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
   "coffee": {
     "keywords": ["beverage", "caffeine", "latte", "espresso"],
     "char": "☕",
@@ -3470,24 +3296,6 @@
   "plate_with_cutlery": {
     "keywords": ["food", "eat", "meal", "lunch", "dinner", "restaurant"],
     "char": "🍽",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
-  "bowl_with_spoon": {
-    "keywords": ["food", "breakfast", "cereal", "oatmeal", "porridge"],
-    "char": "🥣",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
-  "takeout_box": {
-    "keywords": ["food", "leftovers"],
-    "char": "🥡",
-    "fitzpatrick_scale": false,
-    "category": "food_and_drink"
-  },
-  "chopsticks": {
-    "keywords": ["food"],
-    "char": "🥢",
     "fitzpatrick_scale": false,
     "category": "food_and_drink"
   },
@@ -3659,18 +3467,6 @@
     "fitzpatrick_scale": false,
     "category": "activity"
   },
-  "curling_stone": {
-    "keywords": ["sports"],
-    "char": "🥌",
-    "fitzpatrick_scale": false,
-    "category": "activity"
-  },
-  "sled": {
-    "keywords": ["sleigh", "luge", "toboggan"],
-    "char": "🛷",
-    "fitzpatrick_scale": false,
-    "category": "activity"
-  },
   "bow_and_arrow": {
     "keywords": ["sports"],
     "char": "🏹",
@@ -3707,18 +3503,6 @@
     "fitzpatrick_scale": true,
     "category": "activity"
   },
-  "climbing_woman": {
-    "keywords": ["sports", "hobby", "woman", "female", "rock"],
-    "char": "🧗‍♀️",
-    "fitzpatrick_scale": true,
-    "category": "activity"
-  },
-  "climbing_man": {
-    "keywords": ["sports", "hobby", "man", "male", "rock"],
-    "char": "🧗‍♂️",
-    "fitzpatrick_scale": true,
-    "category": "activity"
-  },
   "swimming_woman": {
     "keywords": ["sports", "exercise", "human", "athlete", "water", "summer", "woman", "female"],
     "char": "🏊‍♀️",
@@ -3746,12 +3530,6 @@
   "woman_in_lotus_position": {
     "keywords": ["woman", "female", "meditation", "yoga", "serenity", "zen", "mindfulness"],
     "char": "🧘‍♀️",
-    "fitzpatrick_scale": true,
-    "category": "activity"
-  },
-  "man_in_lotus_position": {
-    "keywords": ["man", "male", "meditation", "yoga", "serenity", "zen", "mindfulness"],
-    "char": "🧘‍♂️",
     "fitzpatrick_scale": true,
     "category": "activity"
   },

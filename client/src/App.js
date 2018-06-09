@@ -7,7 +7,8 @@ import './App.css';
 class App extends Component {
   state = {
     value: 'O ne!!! Mano namas dega, o katė tuoj suvalgys visas spurgas.',
-    translated: 'O 👎!!! 😊👈 🏘 🔥, o 😺 ▶️ 🍽visas 🍩.',
+    translated: 'O ne 👎!!! Mano 😊👈namas 🏠dega 🔥, o katė 😿tuoj 👉suvalgys 🍽visas spurgas 🍩.',
+    replace: false,
   };
 
   handleChange = e => {
@@ -17,14 +18,14 @@ class App extends Component {
 
   translate = debounce(message => {
     axios
-      .post('/api/translate', { message })
+      .post('/api/translate', { message, replace: this.state.replace })
       .then(res => {
         this.setState({ translated: res.data.message });
       })
       .catch(err => {
         console.log(err);
       });
-  }, 1000);
+  }, 300);
 
   copy = () => {
     this.setState({ copied: true });
@@ -32,6 +33,12 @@ class App extends Component {
     setTimeout(() => {
       this.setState({ copied: false });
     }, 1500);
+  };
+
+  toggle = () => {
+    this.setState({ replace: !this.state.replace }, () => {
+      this.translate(this.state.value);
+    });
   };
 
   render() {
@@ -42,11 +49,17 @@ class App extends Component {
         <textarea value={this.state.value} onChange={this.handleChange} />
 
         <h1>
-          Į ✨emociukų kalbą✨{' '}
+          Į ✨emociukų kalbą✨
           <CopyToClipboard text={this.state.translated} onCopy={this.copy}>
             <button id="copyButton">{this.state.copied ? 'Nukopijuota' : 'Kopijuoti'}</button>
           </CopyToClipboard>
         </h1>
+
+        <h3>
+          <input className="toggle" type="checkbox" onChange={this.toggle} checked={!this.state.replace} />
+          Pridėti emoji prie teksto
+        </h3>
+
         <div id="output" dangerouslySetInnerHTML={{ __html: this.state.translated }} />
         <div id="footer">
           <p>
