@@ -306,7 +306,7 @@
     "category": "people"
   },
   "persevere": {
-    "keywords": ["face", "sick", "no", "upset", "oops"],
+    "keywords": ["face", "sick", "upset", "oops"],
     "char": "😣",
     "fitzpatrick_scale": false,
     "category": "people"

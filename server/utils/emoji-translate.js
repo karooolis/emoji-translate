@@ -8,9 +8,9 @@ const allEmoji = require('../data/emojis.json');
  */
 function isMaybeAlreadyAnEmoji(word) {
   let ranges = [
-      '\ud83c[\udf00-\udfff]', // U+1F300 to U+1F3FF
-      '\ud83d[\udc00-\ude4f]', // U+1F400 to U+1F64F
-      '\ud83d[\ude80-\udeff]' // U+1F680 to U+1F6FF
+    '\ud83c[\udf00-\udfff]', // U+1F300 to U+1F3FF
+    '\ud83d[\udc00-\ude4f]', // U+1F400 to U+1F64F
+    '\ud83d[\ude80-\udeff]', // U+1F680 to U+1F6FF
   ];
   return word.match(ranges.join('|')) !== null;
 }
@@ -23,8 +23,7 @@ function isMaybeAlreadyAnEmoji(word) {
 function getAllEmojiForWord(originalWord) {
   let word = originalWord.trim().toLowerCase();
 
-  if (!word || word === '' || word === 'a' || word === 'it' || word === 'is')
-    return '';
+  if (!word || word === '' || word === 'a' || word === 'it' || word === 'is') return '';
 
   // Maybe this is a plural word but the word is the singular?
   // Don't do it for two letter words since "as" would become "a" etc.
@@ -35,11 +34,11 @@ function getAllEmojiForWord(originalWord) {
 
   // Maybe this is a singular word but the word is the plural?
   // Don't do this for single letter since that will pluralize crazy things.
-  let maybePlural = (word.length == 1) ? '' : word + 's';
+  let maybePlural = word.length == 1 ? '' : word + 's';
 
   let maybeVerbedSimple = '';
   let maybeVerbedVowel = '';
-  let maybeVerbedDoubled  = '';
+  let maybeVerbedDoubled = '';
 
   if (word.indexOf('ing') !== -1) {
     let verb = word.substr(0, word.length - 3);
@@ -63,11 +62,11 @@ function getAllEmojiForWord(originalWord) {
   // If it's "i" or "i", add some faces to it.
   if (word === 'i' || word === 'you' || word === 'me') {
     useful.push('😊');
-  } else if (word === 'she'){
+  } else if (word === 'she') {
     useful.push('💁');
-  } else if (word === 'mine' || word === 'my'){
+  } else if (word === 'mine' || word === 'my') {
     useful.push('😊👈');
-  } else if (word === 'he'){
+  } else if (word === 'he') {
     useful.push('💁‍♂️');
   } else if (word === 'we' || word === 'they') {
     useful.push('👩‍👩‍👦‍👦');
@@ -82,16 +81,22 @@ function getAllEmojiForWord(originalWord) {
   for (let emoji in allEmoji) {
     let words = allEmoji[emoji].keywords;
     // TODO: omg refactor this one day, please. Why is this even. Why.
-    if (word == allEmoji[emoji].char ||
-        emoji == word || (emoji == word + '_face') ||
-        emoji == maybeSingular || emoji == maybePlural ||
-        emoji == maybeVerbedSimple || emoji == maybeVerbedVowel || emoji == maybeVerbedDoubled ||
-        (words && words.indexOf(word) >= 0) ||
-        (words && words.indexOf(maybeSingular) >= 0) ||
-        (words && words.indexOf(maybePlural) >= 0) ||
-        (words && words.indexOf(maybeVerbedSimple) >= 0) ||
-        (words && words.indexOf(maybeVerbedVowel) >= 0) ||
-        (words && words.indexOf(maybeVerbedDoubled) >= 0)) {
+    if (
+      word == allEmoji[emoji].char ||
+      emoji == word ||
+      emoji == word + '_face' ||
+      emoji == maybeSingular ||
+      emoji == maybePlural ||
+      emoji == maybeVerbedSimple ||
+      emoji == maybeVerbedVowel ||
+      emoji == maybeVerbedDoubled ||
+      (words && words.indexOf(word) >= 0) ||
+      (words && words.indexOf(maybeSingular) >= 0) ||
+      (words && words.indexOf(maybePlural) >= 0) ||
+      (words && words.indexOf(maybeVerbedSimple) >= 0) ||
+      (words && words.indexOf(maybeVerbedVowel) >= 0) ||
+      (words && words.indexOf(maybeVerbedDoubled) >= 0)
+    ) {
       // If it's a two letter word that got translated to a flag, it's 99% of the
       // time incorrect, so stop doing that.
       if (!(word.length <= 3 && allEmoji[emoji].category == 'flags')) {
@@ -100,7 +105,7 @@ function getAllEmojiForWord(originalWord) {
     }
   }
 
-  return (useful.length === 0) ? '' : useful;
+  return useful.length === 0 ? '' : useful;
 }
 
 /**
@@ -110,7 +115,7 @@ function getAllEmojiForWord(originalWord) {
  */
 function getEmojiForWord(word) {
   let translations = getAllEmojiForWord(word);
-  return translations[Math.floor(Math.random() * translations.length)];
+  return translations[0];
 }
 
 /**
@@ -123,7 +128,7 @@ function getEmojiForWord(word) {
 function translate(sentence, onlyEmoji) {
   let translation = '';
   let words = sentence.split(' ');
-  for (let i = 0; i < words.length; i++ ) {
+  for (let i = 0; i < words.length; i++) {
     // Punctuation blows. Get all the punctuation at the start and end of the word.
     // TODO: stop copy pasting this.
     let firstSymbol = '';
@@ -140,7 +145,7 @@ function translate(sentence, onlyEmoji) {
     }
 
     if (onlyEmoji) {
-      firstSymbol = lastSymbol = ''
+      firstSymbol = lastSymbol = '';
     }
 
     let translated = getEmojiForWord(word);
